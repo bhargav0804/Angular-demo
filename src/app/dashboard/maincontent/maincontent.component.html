@@ -1,0 +1,37 @@
+<div class="container p-2">
+    <img src="../../assets/icon-person-512.webp"  alt="customer icon" style="height: 50px;">
+    <span>Customers</span>
+    <br/><br/>
+    &nbsp;&nbsp; &nbsp;&nbsp;
+    <img src="../../assets/Artboard_19-512.png" alt="list icon" style="height:20px">Card View
+    &nbsp;&nbsp;
+    <img src="../../assets/images.png" alt="list icon" style="height:20px">List View  &nbsp;&nbsp;
+    <img src="../../assets/1471433-200.png" alt="Map icon" style="height:30px">Map View  &nbsp;&nbsp;
+    <img src="../../assets/images (1).png" alt="add icon" style="height:40px">New Customer
+    <span class="filter">Filter:</span>
+    <br>
+    <img src="../../assets/3200004c3461f9bacea52d0dee200ea3.png" alt="search bar icon" style="height:160px; width:185px" class="search-bar">
+    <div class="row">
+        <div class="cards" *ngFor='let cust of info'>
+  
+            <div class="card mb-2" style="width: 295px; margin-left: 45px; height: 180px;">
+                    <div class="card-header navbar-dark bg-primary" id="card-title">
+                        {{cust.name}}
+                        <img src="../../assets/images (2)-removebg-preview.jpg" alt="" id="create-icon">
+                    </div>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="../../assets/website_-_male_business-512.webp" alt="..." style="height: 100px;width: 100px;">
+                    </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <p class="card-title">{{cust.Place}}</p>
+                                <p class="card-text">{{cust.Country}}</p>
+                                <a href="">View Orders</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
